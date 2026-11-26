@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="text-scale" content="scale">
+<meta name="color-scheme" content="light dark">
+<title>Polski B1–B2 — скачать для Android</title>
+<meta name="description" content="Тренажёр польского для экзамена B1/B2: скачать приложение для Android и как его установить.">
+<link rel="icon" href="icon.png">
+<style>
+  :root {
+    color-scheme: light dark;
+    --brand: #b81134;
+    --bg: #ffffff;
+    --fg: #1c1a1d;
+    --muted: #5e5860;
+    --card: #f6f3f4;
+    --border: #e4dde0;
+    --accent: #b81134;
+    --warn-bg: #fff4d6;
+    --warn-border: #e9c45a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141215;
+      --fg: #f3eff1;
+      --muted: #ada5ab;
+      --card: #221e22;
+      --border: #39323a;
+      --accent: #ff8fa2;
+      --warn-bg: #3a2f12;
+      --warn-border: #8a6d1f;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+  }
+  main { max-width: 34rem; margin: 0 auto; padding: 2rem 1.25rem 3rem; }
+
+  .hero { text-align: center; }
+  .hero img { display: block; margin: 0 auto 0.75rem; width: 6rem; height: 6rem; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0; }
+  .lead { color: var(--muted); margin: 0.5rem 0 1.75rem; text-wrap: balance; }
+  h2 { font-size: 1.375rem; margin: 2.5rem 0 1rem; }
+
+  .btn {
+    display: block;
+    padding: 1.1rem 1.25rem;
+    border-radius: 1rem;
+    background: var(--brand);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+  .btn:active { filter: brightness(0.9); }
+  .btn:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  .btn small { display: block; margin-top: 0.3rem; font-size: 0.95rem; font-weight: 400; opacity: 0.9; }
+  .btn.secondary { background: transparent; color: var(--fg); border: 2px solid var(--fg); font-size: 1.125rem; padding: 0.8rem 1rem; }
+
+  .note { color: var(--muted); text-align: center; font-size: 1rem; margin: 0.75rem 0 0; }
+
+  .warn {
+    background: var(--warn-bg);
+    border: 1px solid var(--warn-border);
+    border-radius: 1rem;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  .warn p { margin: 0 0 0.75rem; }
+  .warn p:last-child { margin: 0.75rem 0 0; font-size: 1rem; }
+
+  .steps { list-style: none; counter-reset: step; padding: 0; margin: 0; }
+  .steps li {
+    counter-increment: step;
+    position: relative;
+    padding: 0 0 1.25rem 3rem;
+    text-wrap: pretty;
+  }
+  .steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: -0.1rem;
+    width: 2.1rem;
+    height: 2.1rem;
+    border-radius: 50%;
+    background: var(--brand);
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    line-height: 2.1rem;
+  }
+  .hint { color: var(--muted); font-size: 0.95rem; }
+
+  details {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+  summary { padding: 0.9rem 1.1rem; font-weight: 600; cursor: pointer; }
+  details p { margin: 0; padding: 0 1.1rem 1rem; }
+
+  a { color: var(--accent); }
+  footer { margin-top: 2.5rem; color: var(--muted); font-size: 0.95rem; text-align: center; }
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <img src="icon.png" width="96" height="96" alt="">
+    <h1>Polski B1–B2</h1>
+    <p class="lead">Тренажёр польского для экзамена B1/B2. Приложение для&nbsp;Android.</p>
+  </header>
+
+  <section class="warn" id="telegram" hidden>
+    <p><strong>Сайт открыт внутри Telegram.</strong> Отсюда файл может не скачаться. Откройте сайт в обычном браузере:</p>
+    <a class="btn secondary" href="intent://neylley1.github.io/PolskiB1B2/#Intent;scheme=https;end">Открыть в браузере</a>
+    <p>Не открылось? Нажмите <b>⋮</b> вверху справа → <b>«Открыть в браузере»</b> (Open in browser · 在浏览器中打开).</p>
+  </section>
+
+  <a class="btn" href="https://github.com/Neylley1/PolskiB1B2/releases/latest/download/PolskiB1B2.apk">
+    Скачать приложение
+    <small id="meta">APK для Android · около 170 МБ</small>
+  </a>
+  <p class="note">Файл большой, лучше скачивать по Wi-Fi.</p>
+
+  <h2>Как установить</h2>
+  <ol class="steps">
+    <li>Нажмите <b>«Скачать приложение»</b>. Если телефон переспросит, подтвердите: <b>Скачать</b>.
+      <br><span class="hint">Download · 下载. Если браузер предлагает «безопасную загрузку» через магазин приложений, выберите обычную (普通下载).</span></li>
+    <li>Когда загрузка закончится, нажмите на файл <b>PolskiB1B2.apk</b> в уведомлении сверху или найдите его в приложении <b>Файлы → Загрузки</b>.
+      <br><span class="hint">File Manager → Downloads · 文件管理 → 下载</span></li>
+    <li>Телефон попросит разрешить установку из этого источника: включите переключатель и вернитесь назад.
+      <br><span class="hint">Allow from this source · 允许来自此来源的应用</span></li>
+    <li>Нажмите <b>Установить</b>. Предупреждение про «неизвестное приложение» — это нормально: поставьте галочку, если просят, и нажмите <b>Продолжить</b>.
+      <br><span class="hint">Install · 安装 &nbsp;/&nbsp; Continue · 继续安装</span></li>
+    <li>Готово: значок <b>Polski</b> появится на рабочем столе.</li>
+  </ol>
+
+  <h2>Если не получается</h2>
+  <details>
+    <summary>Пишет про «Чистый режим» (Pure mode · 纯净模式)</summary>
+    <p>Это защита на китайской прошивке Xiaomi: ставит только приложения из своего магазина. В окне с предупреждением нажмите кнопку, которая выключает режим или разрешает установку (关闭纯净模式 / 仍然安装). Если окна нет: <b>Настройки</b> → поиск сверху → введите <b>纯净</b> (или Pure) → выключить. Если спросит пароль Mi-аккаунта, введите его. После установки режим можно включить обратно.</p>
+  </details>
+  <details>
+    <summary>Нажимаю «Скачать», и ничего не происходит</summary>
+    <p>Скорее всего, сайт открыт внутри Telegram. Нажмите <b>⋮</b> вверху справа → <b>«Открыть в браузере»</b> и нажмите «Скачать» там.</p>
+  </details>
+  <details>
+    <summary>«Ошибка при анализе пакета» (解析包时出现问题)</summary>
+    <p>Файл скачался не до конца. Удалите его из «Загрузок» и скачайте заново по Wi-Fi.</p>
+  </details>
+
+  <footer>Нужен Android 8 или новее. <a href="https://github.com/Neylley1/PolskiB1B2/releases">Все версии</a></footer>
+</main>
+<script>
+  if (window.TelegramWebview || window.TelegramWebviewProxy || /Telegram/i.test(navigator.userAgent)) {
+    document.getElementById('telegram').hidden = false;
+  }
+
+  fetch('https://api.github.com/repos/Neylley1/PolskiB1B2/releases/latest')
+    .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
+    .then((release) => {
+      const apk = release.assets.find((a) => a.name === 'PolskiB1B2.apk');
+      if (!apk) return;
+      const version = release.tag_name.replace(/^v/, '');
+      const mb = Math.round(apk.size / 1048576);
+      document.getElementById('meta').textContent = `версия ${version} · ${mb} МБ`;
+    })
+    .catch(() => {});
+</script>
+</body>
+</html>
